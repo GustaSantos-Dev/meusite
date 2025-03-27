@@ -1,0 +1,68 @@
+<!DOCTYPE html> 
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automação para Clínicas Odontológicas - Gustavo Reis</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+        body { font-family: 'Orbitron', sans-serif; margin: 0; padding: 0; background-color: #000; color: #ffffff; overflow-x: hidden; }
+        .container { width: 90%; max-width: 1200px; margin: auto; overflow: hidden; }
+        header { background: linear-gradient(135deg, #111, #222); padding: 60px 20px; text-align: center; border-bottom: 5px solid #00d4ff; position: relative; animation: fadeInDown 1.2s ease-in-out; }
+        .logo-container { display: flex; align-items: center; justify-content: center; animation: bounceIn 2s ease-in-out infinite alternate; }
+        .logo-text { font-size: 40px; font-weight: bold; color: #00d4ff; text-transform: uppercase; text-shadow: 0 0 25px #00d4ff; }
+        .intro { text-align: center; padding: 50px; font-size: 28px; animation: fadeInUp 1.5s ease-in-out; }
+        .services { display: flex; flex-wrap: wrap; justify-content: center; padding: 50px 0; }
+        .service { background: #161b22; padding: 40px; margin: 20px; width: 32%; border-radius: 15px; box-shadow: 0 0 30px rgba(0, 212, 255, 0.6); transition: transform 0.5s ease-in-out; text-align: center; animation: zoomIn 1.5s ease-in-out; }
+        .service:hover { transform: scale(1.2); box-shadow: 0 0 40px rgba(0, 212, 255, 1); }
+        .service h3 { color: #00d4ff; font-size: 26px; }
+        .contact-form { background: #161b22; padding: 40px; margin-top: 50px; border-radius: 15px; box-shadow: 0 0 35px rgba(0, 212, 255, 0.8); text-align: center; animation: fadeIn 1.5s ease-in-out; }
+        .contact-form input, .contact-form button { width: 100%; padding: 18px; margin-top: 16px; border-radius: 8px; border: none; font-size: 20px; }
+        .contact-form input { background: #0d1117; color: #ffffff; border: 3px solid #00d4ff; text-align: center; }
+        .contact-form button { background: #00d4ff; color: white; cursor: pointer; font-weight: bold; transition: background 0.3s, transform 0.3s; }
+        .contact-form button:hover { background: #007bff; transform: scale(1.1); }
+        .whatsapp-button { display: block; text-align: center; margin-top: 30px; padding: 25px; background: #25d366; color: white; text-decoration: none; border-radius: 8px; font-size: 24px; font-weight: bold; transition: background 0.3s, transform 0.3s; animation: pulse 1.5s infinite alternate; }
+        .whatsapp-button:hover { background: #1da851; transform: scale(1.15); }
+        .cta { text-align: center; font-size: 30px; margin-top: 50px; font-weight: bold; color: #00d4ff; animation: pulse 1.5s infinite alternate; }
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+        @keyframes fadeInDown { from { opacity: 0; transform: translateY(-50px); } to { opacity: 1; transform: translateY(0); } }
+        @keyframes fadeInUp { from { opacity: 0; transform: translateY(50px); } to { opacity: 1; transform: translateY(0); } }
+        @keyframes zoomIn { from { opacity: 0; transform: scale(0.7); } to { opacity: 1; transform: scale(1); } }
+        @keyframes bounceIn { from { transform: translateY(0); } to { transform: translateY(-10px); } }
+        @keyframes pulse { from { transform: scale(1); } to { transform: scale(1.12); } }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <div class="logo-text"> O D O N T O       S M A R T </div>
+        </div>
+        <h1>Automação para Clínicas Odontológicas</h1>
+        <p>Transforme sua clínica com soluções tecnológicas inovadoras!</p>
+    </header>
+    <div class="container">
+        <div class="intro">
+            <p>Sou Gustavo Reis, especialista em automação para clínicas odontológicas. Meu objetivo é otimizar processos, reduzir tarefas manuais e aumentar a eficiência da sua clínica por meio de tecnologia avançada.</p>
+        </div>
+        <div class="services">
+            <div class="service"><h3>Bots para WhatsApp e Telegram</h3><p>Automatize respostas, capture leads e envie mensagens estratégicas para pacientes.</p></div>
+            <div class="service"><h3>Scraping de Dados</h3><p>Extração de informações valiosas de sites para análise e tomada de decisão.</p></div>
+            <div class="service"><h3>Preenchimento Automático de Formulários</h3><p>Automação inteligente para cadastro e gerenciamento de dados.</p></div>
+            <div class="service"><h3>Automação de Planilhas</h3><p>Gerencie informações com eficiência no Google Sheets ou Excel.</p></div>
+            <div class="service"><h3>Envio Automático de E-mails</h3><p>Personalize e envie e-mails automatizados para pacientes e equipe.</p></div>
+            <div class="service"><h3>Automação de Tarefas Repetitivas</h3><p>Reduza o trabalho manual e aumente a produtividade da sua clínica.</p></div>
+        </div>
+        <div class="cta">Automatize sua clínica agora! Solicite um orçamento gratuito!</div>
+        <div class="contact-form">
+            <h2>Entre em Contato</h2>
+            <form action="mailto:grcsantos88@gmail.com" method="post" enctype="text/plain">
+                <input type="text" name="nome" placeholder="Nome" required>
+                <input type="email" name="email" placeholder="E-mail" required>
+                <input type="text" name="assunto" placeholder="Assunto" required>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+        <a class="whatsapp-button" href="https://wa.me/5511988633990" target="_blank">Fale Conosco pelo WhatsApp</a>
+    </div>
+</body>
+</html>
